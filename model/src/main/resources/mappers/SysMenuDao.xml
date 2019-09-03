@@ -9,7 +9,6 @@
 
 	<!-- select * from sys_menu where type != 2 order by order_num asc -->
 	<select id="queryNotButtonList" resultType="com.debug.pmp.model.entity.SysMenuEntity">
-
 		SELECT
 		  t1.*,
 		  (SELECT t2.name

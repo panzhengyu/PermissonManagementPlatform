@@ -91,15 +91,16 @@ var vm = new Vue({
 		},
 
 		//联系作者
-        linkAuthor: function () {
+        /*linkAuthor: function () {
             layer.open({
                 type: 2,
-                title: false,
+                title: "联系作者",
                 area: ['986px', '490px'],
                 closeBtn: 1,
                 shadeClose: false
+                content: ['http://www.chinaunicom.com.cn/images/20090405003023821.gif', 'yes']
             });
-        }
+        }*/
 	},
 	created: function(){
 		this.getMenuList();

@@ -2,11 +2,9 @@ package com.debug.pmp.server.shiro;/**
  * Created by Administrator on 2019/7/30.
  */
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.debug.pmp.common.utils.Constant;
 import com.debug.pmp.model.entity.SysMenuEntity;
 import com.debug.pmp.model.entity.SysUserEntity;
-import com.debug.pmp.model.mapper.SysMenuDao;
 import com.debug.pmp.model.mapper.SysUserDao;
 import com.debug.pmp.server.service.SysMenuService;
 import com.google.common.collect.Lists;
@@ -24,7 +22,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;

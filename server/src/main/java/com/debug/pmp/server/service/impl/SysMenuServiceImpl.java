@@ -7,7 +7,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.debug.pmp.common.utils.Constant;
 import com.debug.pmp.model.entity.SysMenuEntity;
 import com.debug.pmp.model.entity.SysRoleMenuEntity;
-import com.debug.pmp.model.entity.SysUserEntity;
 import com.debug.pmp.model.mapper.SysMenuDao;
 import com.debug.pmp.model.mapper.SysUserDao;
 import com.debug.pmp.server.service.SysMenuService;
@@ -19,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -138,43 +138,3 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuDao,SysMenuEntity> im
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
