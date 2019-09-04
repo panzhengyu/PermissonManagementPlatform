@@ -3,6 +3,7 @@ package com.debug.pmp.model.entity;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 
@@ -14,6 +15,7 @@ import java.io.Serializable;
  * @author pzy
  * @since 2019-09-03
  */
+@Data
 @TableName("sys_score")
 public class SysScoreEntity implements Serializable {
 
@@ -21,15 +23,10 @@ public class SysScoreEntity implements Serializable {
 
 	@TableId
 	private Integer id;
-	@TableField("user_id")
 	private Long userId;
-	@TableField("tutor_score")
 	private Integer tutorScore;
-	@TableField("performance_score")
 	private Integer performanceScore;
-	@TableField("train_score")
 	private Integer trainScore;
-	@TableField("professional_score")
 	private Integer professionalScore;
 
 
