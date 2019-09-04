@@ -40,7 +40,7 @@ public class Swagger2Configuration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("com.debug.pmp的接口")
+                .title("员工管理平台的接口")
                 .description("基于 swagger 2 的自动化文档")
                 .version("1.0")
                 .contact(new Contact("zhouyulei33", "https://github.com/zhouyulei/PermissonManagementPlatform.git", "zhouyulei33@163.com"))
