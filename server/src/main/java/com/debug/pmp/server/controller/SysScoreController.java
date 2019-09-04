@@ -7,10 +7,7 @@ import com.debug.pmp.server.service.SysScoreService;
 import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -30,8 +27,8 @@ public class SysScoreController extends AbstractController{
     private SysScoreService sysScoreService;
 
     @LogAnnotation("查询")
-    @RequestMapping(value = "/query", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public BaseResponse query(@RequestBody Long id) {
+    @RequestMapping(value = "/query/{id}", method = RequestMethod.GET, produces = "application/json")
+    public BaseResponse query(@PathVariable Long id) {
         BaseResponse response = new BaseResponse(StatusCode.Success);
         Map<String, Object> resMap = Maps.newHashMap();
         try {
