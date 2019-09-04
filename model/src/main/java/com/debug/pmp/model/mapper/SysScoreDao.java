@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Param;
  * @version v1.0.0
  * @ClassName: SysScoreDao
  * @date 2019/9/4 15:17
- * @Description: TODO
+ * @Description: SysScoreDao
  */
 @Mapper
 public interface SysScoreDao {

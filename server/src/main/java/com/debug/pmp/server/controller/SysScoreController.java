@@ -20,7 +20,7 @@ import java.util.Map;
  * @version v1.0.0
  * @ClassName: SysScoreController
  * @date 2019/9/4 16:25
- * @Description: TODO
+ * @Description: SysScoreController
  */
 @RestController
 @RequestMapping("/sys/score")

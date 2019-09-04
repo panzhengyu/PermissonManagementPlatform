@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @version v1.0.0
  * @ClassName: SysScoreServiceImpl
  * @date 2019/9/4 15:46
- * @Description: TODO
+ * @Description: SysScoreServiceImpl
  */
 @Service("sysScoreService")
 public class SysScoreServiceImpl implements SysScoreService{
