@@ -13,7 +13,7 @@
 
 	<select id="queryByUserId" resultType="com.debug.pmp.model.entity.SysScoreEntity">
 		SELECT *
-		FROM sys_score WHERE id=#{id}
+		FROM sys_score WHERE user_id=#{id}
 	</select>
 
 </mapper>
